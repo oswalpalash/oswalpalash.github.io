@@ -7,10 +7,10 @@
 <div id="proxy_controller" style="text-align:center;">
   <a id="proxy_controller_text" onclick="setVisibility('proxy', 'inline');setVisibility('guestbook_controller_text','none');setVisibility('proxy_controller_text', 'none');";>1) Proxy </a><br>
   <a id="guestbook_controller_text" onclick="setVisibility('guestbook', 'inline');setVisibility('guestbook_controller_text', 'none');setVisibility('proxy_controller_text', 'none');";>2) Guest Book (App Engine) </a></div>
-<div id="proxy" align="middle">
+<div id="proxy">
   <iframe id="proxy" src="https://xp1r4t3proxy.appspot.com/" width="800" height="500"/></iframe>
 </div>
-<div id="guestbook" align="middle">
+<div id="guestbook">
   <iframe id="guestbook" src="https://djangoguestbookpalash.appspot.com/" width="800" height="500"/></iframe>
 </div>
 <script language="JavaScript">
@@ -18,7 +18,9 @@ function setVisibility(id, visibility) {
 document.getElementById(id).style.display = visibility;
 }
 document.getElementById("proxy").style.display = "none";
+document.getElementById("proxy").style.align = "middle";
 document.getElementById("guestbook").style.display = "none";
+document.getElementById("guestbook").style.align = "middle";
 </script>
 </body>
 </html>
