@@ -10,9 +10,10 @@
 <h1 style="text-align:center;">Click Following Web Apps To Access Them</h1>
 <br>
 <div id="proxy_controller" style="text-align:center;">
-  <a id="blog_controller_text" onclick="setVisibility('blog', '');setVisibility('proxy_controller_text','none');setVisibility('guestbook_controller_text','none');setVisibility('blog_controller_text', 'none');";>    Blog </a><br>
-  <a id="proxy_controller_text" onclick="setVisibility('proxy', '');setVisibility('blog_controller_text', 'none');setVisibility('guestbook_controller_text','none');setVisibility('proxy_controller_text', 'none');";>1) Proxy </a><br>
-  <a id="guestbook_controller_text" onclick="setVisibility('guestbook', '');setVisibility('blog_controller_text', 'none');setVisibility('guestbook_controller_text', 'none');setVisibility('proxy_controller_text', 'none');";>2) Guest Book (App Engine) </a></div>
+  <a id="blog_controller_text" onclick="setVisibility('blog', '');setVisibility('proxy_controller_text','none');setVisibility('guestbook_controller_text','none');setVisibility('blog_controller_text', 'none');setVisibility('football_controller_text', 'none');";>    Blog </a><br>
+  <a id="proxy_controller_text" onclick="setVisibility('proxy', '');setVisibility('blog_controller_text', 'none');setVisibility('guestbook_controller_text','none');setVisibility('proxy_controller_text', 'none');setVisibility('football_controller_text', 'none')";>1) Proxy </a><br>
+  <a id="guestbook_controller_text" onclick="setVisibility('guestbook', '');setVisibility('blog_controller_text', 'none');setVisibility('guestbook_controller_text', 'none');setVisibility('proxy_controller_text', 'none');setVisibility('football_controller_text', 'none')";>2) Guest Book (App Engine) </a
+  <a id="guestbook_controller_text" onclick="setVisibility('football', '');setVisibility('proxy_controller_text','none');setVisibility('blog_controller_text', 'none');setVisibility('guestbook_controller_text', 'none');setVisibility('football_controller_text', 'none');";>3) FOOTBALL API (App Engine) </a></div>
 <div id="proxy">
   <iframe id="proxy" src="https://xp1r4t3proxy.appspot.com/" width="800" height="500"/></iframe>
 </div>
@@ -21,6 +22,9 @@
 </div>
 <div id="blog">
   <iframe id="blog" src="http://brainfreez3.blogspot.com/" width="800" height="500"/></iframe>
+</div>
+<div id="football">
+  <iframe id="football" src="http://oswalpalash.appspot.com/football/" width="800" height="500"/></iframe>
 </div>
 <script language="JavaScript">
 function setVisibility(id, visibility) {
@@ -31,6 +35,7 @@ function setVisibility(id, visibility) {
 document.getElementById("proxy").style.display = "none";
 document.getElementById("guestbook").style.display = "none";
 document.getElementById("blog").style.display = "none";
+document.getElementById("football").style.display = "none";
 </script>
 <div id="footer" style="width:100%;
 	height:25px;
