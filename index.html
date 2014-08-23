@@ -15,8 +15,9 @@
 </div>
 <script language="JavaScript">
 function setVisibility(id, visibility) {
-document.getElementById(id).style.display = visibility;
-document.getElementById(id).style.align = "middle";
+  X = document.getElementById(id);
+  X.style.display=visibility;
+  X.style.align="middle";
 }
 document.getElementById("proxy").style.display = "none";
 document.getElementById("guestbook").style.display = "none";
